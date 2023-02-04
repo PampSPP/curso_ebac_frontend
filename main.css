@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.container, .produtos {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 131, 215);
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(21, 131, 215);
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    background-color: rgb(21, 131, 215);
+}
+
+.menu li a {
+    background-color: rgb(21, 131, 215);
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-style: italic;
+    background-color: rgb(21, 131, 215);
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section img {
+    height: 300px;
+    padding-top: 40px;
+}
+
+.sobre h2, .produtos h2 {
+    border-bottom: 2px solid rgb(21, 131, 215);
+    padding: 16px 0;
+    color: rgb(21, 131, 215);
+    font-style: italic;
+}
+
+.produtos {
+    margin-top: 16px;
+}
+
+.container .sobre {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.container .sobre p {
+    margin-top: 30px;
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    padding-top: 16px;
+    margin-bottom: 8px;
+}
+
+.produto button {
+    background-color: rgb(21, 131, 215);
+    border: none;
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container, .produtos {
+        max-width: 90%;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    header {
+        padding: 16px 0;
+        background-color: rgb(21, 131, 215);
+        color: #fff;
+        font-weight: bold;
+    }
+
+    ul {
+        background-color: rgb(21, 131, 215);
+    }
+    
+    .menu li {
+        float: left;
+        list-style: none;
+        padding: 6px 8px;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    .menu li a {
+        background-color: rgb(21, 131, 215);
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    h1 {
+        font-style: italic;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    section img {
+        height: 300px;
+        padding-top: 35px;
+    }
+    
+    .sobre h2, .produtos h2 {
+        border-bottom: 2px solid rgb(21, 131, 215);
+        padding: 16px 0;
+        color: rgb(21, 131, 215);
+        font-style: italic;
+    }
+    
+    .produtos {
+        margin-top: 16px 0;
+    }
+    
+    .produto {
+        grid-template-columns: repeat(2, 44.5%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container, .produtos {
+        display: block;
+        max-width: 80%;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    header {
+        padding: 16px 0;
+        background-color: rgb(21, 131, 215);
+        color: #fff;
+        font-weight: bold;
+    }
+
+    ul {
+        background-color: rgb(21, 131, 215);
+    }
+    
+    .menu li {
+        float: left;
+        list-style: none;
+        padding: 6px 8px;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    .menu li a {
+        background-color: rgb(21, 131, 215);
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    h1 {
+        font-style: italic;
+        background-color: rgb(21, 131, 215);
+    }
+    
+    section img {
+        height: 250px;
+        padding-top: 35px;
+    }
+
+    .container .sobre {
+        margin-top: 20px;
+        margin-left: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sobre h2, .produtos h2 {
+        border-bottom: 2px solid rgb(21, 131, 215);
+        padding: 16px 0;
+        color: rgb(21, 131, 215);
+        font-style: italic;
+    }
+    
+    .produtos {
+        margin-top: 16px 0;
+    }
+    
+    .container .sobre p {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    
+    .produto {
+        display: block;
+    }
+}
